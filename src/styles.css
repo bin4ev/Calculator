@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;;
+}
+button {
+    background-color: #F7F7F8; 
+    padding: 17px;
+    font-size: 13px;
+    width: 62px;
+    border: solid 1px #F4F4F4;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #DBD6D7;;
+}
+.numbers {
+    background-color: white;
+    font-weight: 700;
+}
+.symbols {
+    background-color: white;
+}
+
+#wrap-btns {
+    width: 250px;
+}
+
+#header {
+    height: 66px;
+    background-color: #F1F1F1;
+    text-align: right;
+    padding: 12px;
+}
+#temp {
+    color: #616161;
+}
+
+span {
+    font-size: 40px;
+    font-weight: bold;
+}
+.wrap-div-btns {
+    margin-top: 5px;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    color: #DBD6D7;
+    cursor: pointer;
+}
+.equal {
+    background-color: #8FBFE4
+}
+.div-btns-bold {
+    font-weight: bold;
+    color: black;
+}
