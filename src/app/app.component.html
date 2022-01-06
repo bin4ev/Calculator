@@ -1,13 +1,17 @@
 <div id="container">
   <div id="header">
-    <div id="temp" *ngIf="temp">{{temp}}</div>
-    <span *ngIf="!sec">{{first}}</span>
-    <span *ngIf="sec">{{sec}}</span>
-    <span *ngIf="!first">{{result}}</span>
+    <div id="temp" *ngIf="expDisplay">{{expDisplay}}</div>
+    <span id="first" *ngIf="stateVisual == 'first' ">{{data.first}}</span>
+    <span id="sec" *ngIf="stateVisual == 'sec' ">{{data.sec}}</span>
+    <span *ngIf="stateVisual == 'result'" >{{result}}</span>
   </div>
-  <app-btns (sendValue)="getValue($event)"
+  <app-btns
+   (sendValue)="getValue($event)"
    (emitResult)="showResult($event)"
    (sendSign)="setSign($event)"
    (clear)="clearAll()"
+   (cutting)="cutValue()"
+   (absVal)="getAbsValue()"
    ></app-btns>
 </div>
+

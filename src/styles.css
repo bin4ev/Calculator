@@ -45,12 +45,12 @@ span {
     font-weight: bold;
 }
 .wrap-div-btns {
-    margin-top: 5px;
-    display: flex;
-    font-size: 10px;
-    justify-content: space-between;
-    color: #DBD6D7;
-    cursor: pointer;
+     display: flex;
+     font-size: 11px;
+     justify-content: space-around;
+     color: #DBD6D7;
+     cursor: pointer;
+     background-color: #F1F1F1;
 }
 .equal {
     background-color: #8FBFE4

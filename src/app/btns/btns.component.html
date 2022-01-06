@@ -1,26 +1,34 @@
 <div id="wrap-btns">
+  <div class="wrap-div-btns">
+    <div class="div-btns">MC</div>
+    <div class="div-btns">MR</div>
+    <div class="div-btns div-btns-bold">M+</div>
+    <div class="div-btns div-btns-bold">M-</div>
+    <div class="div-btns div-btns-bold">MS</div>
+    <div class="div-btns">M</div>
+  </div>
     <button>%</button>
     <button>CE</button>
     <button (click)="clearEvent()">C</button>
-    <button><</button>
+    <button (click)="cut()"><</button>
     <button>1/x</button>
     <button>x2</button>
     <button >x</button>
     <button (click)="addSign('÷')">÷</button>
-    <button class="numbers" (click)="add('7')">7</button>
-    <button class="numbers" (click)="add('8')">8</button>
-    <button class="numbers" (click)="add('9')">9</button>
+    <button class="numbers" (click)="numberEvent('7')">7</button>
+    <button class="numbers" (click)="numberEvent('8')">8</button>
+    <button class="numbers" (click)="numberEvent('9')">9</button>
     <button (click)="addSign('x')">x</button>
-    <button class="numbers"  (click)="add('4')">4</button>
-    <button class="numbers"  (click)="add('5')">5</button>
-    <button class="numbers"  (click)="add('6')">6</button>
+    <button class="numbers"  (click)="numberEvent('4')">4</button>
+    <button class="numbers"  (click)="numberEvent('5')">5</button>
+    <button class="numbers"  (click)="numberEvent('6')">6</button>
     <button (click)="addSign('-')">-</button>
-    <button class="numbers"  (click)="add('1')">1</button>
-    <button class="numbers"  (click)="add('2')">2</button>
-    <button class="numbers"  (click)="add('3')">3</button>
+    <button class="numbers"  (click)="numberEvent('1')">1</button>
+    <button class="numbers"  (click)="numberEvent('2')">2</button>
+    <button class="numbers"  (click)="numberEvent('3')">3</button>
     <button (click)="addSign('+')">+</button>
-    <button class="symbols">+/-</button>
-    <button class="numbers"  (click)="add('0')">0</button>
-    <button class="symbols"  (click)="add('.')">.</button>
+    <button class="symbols" (click)="convertAbsVal()">+/-</button>
+    <button class="numbers"  (click)="numberEvent('0')">0</button>
+    <button class="symbols"  (click)="numberEvent('.')">.</button>
     <button class="equal" (click)="pressEqual('=')">=</button>
   </div>

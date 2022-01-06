@@ -11,10 +11,12 @@ export class btnsComponent {
   @Output() emitResult = new EventEmitter()
   @Output() sendSign = new EventEmitter()
   @Output() clear = new EventEmitter()
+  @Output() cutting = new EventEmitter()
+  @Output() absVal = new EventEmitter()
 
   constructor() { }
 
-  add(val: string): void {
+  numberEvent(val: string): void {
     this.sendValue.emit(val)
   }
 
@@ -22,12 +24,20 @@ export class btnsComponent {
     this.sendSign.emit(sign)
   }
 
-  pressEqual(sign:string): void {
+  pressEqual(sign: string): void {
     this.emitResult.emit(sign)
   }
 
-  clearEvent():void {
+  clearEvent(): void {
     this.clear.emit()
   }
-  
+
+  cut() {
+    this.cutting.emit()
+  }
+
+  convertAbsVal(): void {
+    this.absVal.emit()
+  }
+
 }
