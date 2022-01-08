@@ -18,6 +18,10 @@ button {
 button:hover {
     background-color: #DBD6D7;;
 }
+
+#erace-icon {
+    font-size: 11px;
+}
 .numbers {
     background-color: white;
     font-weight: 700;
@@ -45,6 +49,7 @@ span {
     font-weight: bold;
 }
 .wrap-div-btns {
+    padding-bottom: 5px;
      display: flex;
      font-size: 11px;
      justify-content: space-around;

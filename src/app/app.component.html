@@ -1,14 +1,12 @@
 <div id="container">
   <div id="header">
     <div id="temp" *ngIf="expDisplay">{{expDisplay}}</div>
-    <span id="first" *ngIf="stateVisual == 'first' ">{{data.first}}</span>
-    <span id="sec" *ngIf="stateVisual == 'sec' ">{{data.sec}}</span>
-    <span *ngIf="stateVisual == 'result'" >{{result}}</span>
+    <span>{{display}}</span>
   </div>
   <app-btns
    (sendValue)="getValue($event)"
    (emitResult)="showResult($event)"
-   (sendSign)="setSign($event)"
+   (sendSign)="setOperator($event)"
    (clear)="clearAll()"
    (cutting)="cutValue()"
    (absVal)="getAbsValue()"
